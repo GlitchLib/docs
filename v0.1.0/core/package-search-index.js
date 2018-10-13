@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"glitch"},{"l":"glitch.auth"},{"l":"glitch.auth.json"},{"l":"glitch.auth.json.converters"},{"l":"glitch.auth.store"},{"l":"glitch.core.api"},{"l":"glitch.core.api.json"},{"l":"glitch.core.api.json.converters"},{"l":"glitch.core.api.json.enums"},{"l":"glitch.core.utils"},{"l":"glitch.core.utils.http"},{"l":"glitch.core.utils.http.instances"}]

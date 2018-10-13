@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"glitch.pubsub","l":"GlitchPubSub"}]

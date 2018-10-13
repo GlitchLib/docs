@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"glitch.chat"},{"l":"glitch.chat.events"},{"l":"glitch.chat.events.channel"},{"l":"glitch.chat.events.chat"},{"l":"glitch.chat.events.states"},{"l":"glitch.chat.irc"}]
