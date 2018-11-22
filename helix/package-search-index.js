@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"glitch.helix"},{"l":"glitch.helix.service"}]
