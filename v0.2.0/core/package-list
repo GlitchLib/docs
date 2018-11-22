@@ -1,0 +1,16 @@
+glitch
+glitch.api
+glitch.api.http
+glitch.api.objects.adapters
+glitch.api.objects.enums
+glitch.api.objects.json
+glitch.api.objects.json.interfaces
+glitch.api.ws
+glitch.api.ws.events
+glitch.auth
+glitch.auth.objects.adapters
+glitch.auth.objects.json
+glitch.auth.store
+glitch.exceptions
+glitch.exceptions.http
+glitch.exceptions.ws
