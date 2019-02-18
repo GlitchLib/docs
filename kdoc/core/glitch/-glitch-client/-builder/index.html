@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlitchClient.Builder - core</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">core</a>&nbsp;/&nbsp;<a href="../../index.html">glitch</a>&nbsp;/&nbsp;<a href="../index.html">GlitchClient</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Builder</span></code>
+<p><strong>Author</strong><br/>
+Damian Staszewski [damian@stachuofficial.tv]</p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Builder</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-default-scope.html">addDefaultScope</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addDefaultScope</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.GlitchClient.Builder$addDefaultScope(kotlin.Array((glitch.auth.GlitchScope)))/scopes">scopes</span><span class="symbol">:</span>&nbsp;<a href="../../../glitch.auth/-glitch-scope/index.html"><span class="identifier">GlitchScope</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-default-scopes.html">addDefaultScopes</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addDefaultScopes</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$addDefaultScopes(kotlin.collections.MutableCollection((glitch.auth.GlitchScope)))/scopes">scopes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="../../../glitch.auth/-glitch-scope/index.html"><span class="identifier">GlitchScope</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="build.html">build</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../index.html"><span class="identifier">GlitchClient</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="build-async.html">buildAsync</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildAsync</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../index.html"><span class="identifier">GlitchClient</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-client-id.html">setClientId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setClientId</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$setClientId(kotlin.String)/clientId">clientId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-client-secret.html">setClientSecret</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setClientSecret</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$setClientSecret(kotlin.String)/clientSecret">clientSecret</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-http-client.html">setHttpClient</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setHttpClient</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$setHttpClient(okhttp3.OkHttpClient)/httpClient">httpClient</span><span class="symbol">:</span>&nbsp;<span class="identifier">OkHttpClient</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-redirect-uri.html">setRedirectUri</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setRedirectUri</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$setRedirectUri(kotlin.String)/redirectUri">redirectUri</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-storage.html">setStorage</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setStorage</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$setStorage(glitch.auth.store.Storage)/storage">storage</span><span class="symbol">:</span>&nbsp;<a href="../../../glitch.auth.store/-storage/index.html"><span class="identifier">Storage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-user-agent.html">setUserAgent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setUserAgent</span><span class="symbol">(</span><span class="identifier" id="glitch.GlitchClient.Builder$setUserAgent(kotlin.String)/userAgent">userAgent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

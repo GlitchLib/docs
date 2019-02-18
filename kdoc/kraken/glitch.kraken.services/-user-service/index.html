@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UserService - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services</a>&nbsp;/&nbsp;<a href="./index.html">UserService</a><br/>
+<br/>
+<h1>UserService</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">UserService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractHttpService</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UserService</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$<init>(glitch.kraken.GlitchKraken)/rest">rest</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken/-glitch-kraken/index.html"><span class="identifier">GlitchKraken</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="check-user-subscription-by-channel.html">checkUserSubscriptionByChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">checkUserSubscriptionByChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$checkUserSubscriptionByChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$checkUserSubscriptionByChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential)/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$checkUserSubscriptionByChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-subscriber/index.html"><span class="identifier">Subscriber</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="follow-channel.html">followChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">followChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$followChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential, kotlin.Boolean)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$followChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential, kotlin.Boolean)/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$followChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential, kotlin.Boolean)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$followChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential, kotlin.Boolean)/notifications">notifications</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel-user-follow/index.html"><span class="identifier">ChannelUserFollow</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-follow.html">getFollow</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFollow</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$getFollow(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$getFollow(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel)/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel-user-follow/index.html"><span class="identifier">ChannelUserFollow</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-by-id.html">getUserById</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserById</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$getUserById(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-emotes.html">getUserEmotes</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserEmotes</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$getUserEmotes(kotlin.Long, glitch.auth.objects.json.Credential)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$getUserEmotes(kotlin.Long, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-emote-set/index.html"><span class="identifier">EmoteSet</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-follows.html">getUserFollows</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserFollows</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$getUserFollows(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-user-follows-request/index.html"><span class="identifier">UserFollowsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-users.html">getUsers</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsers</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$getUsers(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-auth-user/index.html"><span class="identifier">AuthUser</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsers</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.kraken.services.UserService$getUsers(kotlin.Array((kotlin.String)))/logins">logins</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsers</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$getUsers(kotlin.collections.MutableCollection((kotlin.String)))/logins">logins</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="unfollow-channel.html">unfollowChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">unfollowChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.UserService$unfollowChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$unfollowChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential)/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.UserService$unfollowChannel(glitch.kraken.object.json.User, glitch.kraken.object.json.Channel, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

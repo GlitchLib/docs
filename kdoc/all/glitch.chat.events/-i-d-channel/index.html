@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IDChannel - all</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">all</a>&nbsp;/&nbsp;<a href="../index.html">glitch.chat.events</a>&nbsp;/&nbsp;<a href="./index.html">IDChannel</a><br/>
+<br/>
+<h1>IDChannel</h1>
+<code><span class="keyword">interface </span><span class="identifier">IDChannel</span></code>
+<p><strong>Author</strong><br/>
+Damian Staszewski <a href="#">damian@stachuofficial.tv</a></p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="channel-id.html">channelId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">channelId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-channel-bits-message-event/index.html">ChannelBitsMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelBitsMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IDChannel</span></a><span class="symbol">, </span><a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.api.objects.json.interfaces/-i-d-object/index.html"><span class="identifier">IDObject</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span></code>
+<p>Received message with bits from channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-hosted-event/index.html">ChannelHostedEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelHostedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IDChannel</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-message-event/index.html">ChannelMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.api.objects.json.interfaces/-i-d-object/index.html"><span class="identifier">IDObject</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">IDChannel</span></a></code>
+<p>Received message from channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-state-changed-event/index.html">ChannelStateChangedEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IDChannel</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-state-event/index.html">ChannelStateEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelStateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IDChannel</span></a></code>
+<p>Anonymous user gift a subscription on the channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-i-d-channel-user.html">IDChannelUser</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">IDChannelUser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IDChannel</span></a><span class="symbol">, </span><a href="../-i-d-user/index.html"><span class="identifier">IDUser</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

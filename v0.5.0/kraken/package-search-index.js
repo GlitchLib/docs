@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"glitch.kraken"},{"l":"glitch.kraken.object.adapters"},{"l":"glitch.kraken.object.enums"},{"l":"glitch.kraken.services"},{"l":"glitch.kraken.services.request"}]

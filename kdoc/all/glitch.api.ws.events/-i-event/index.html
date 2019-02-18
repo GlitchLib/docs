@@ -1,0 +1,253 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IEvent - all</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">all</a>&nbsp;/&nbsp;<a href="../index.html">glitch.api.ws.events</a>&nbsp;/&nbsp;<a href="./index.html">IEvent</a><br/>
+<br/>
+<h1>IEvent</h1>
+<code><span class="keyword">interface </span><span class="identifier">IEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Event Interface</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski <a href="#">damian@stachuofficial.tv</a></p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="client.html">client</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">client</span><span class="symbol">: </span><a href="index.html#S"><span class="identifier">S</span></a></code>
+<p>the <a href="#">glitch.GlitchClient</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="created-at.html">createdAt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">createdAt</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a></code>
+<p>Event creation time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="event-id.html">eventId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">eventId</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a></code>
+<p>unique Event ID</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-abstract-event/index.html">AbstractEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="../-abstract-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="../-abstract-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>All events must be extends this class if they want to be emitted via <a href="#">reactor.core.publisher.FluxProcessor</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-anonymous-gift-sub-event/index.html">AnonymousGiftSubEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnonymousGiftSubEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span></code>
+<p>Anonymous user gift a subscription on the channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-channel-bits-message-event/index.html">ChannelBitsMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelBitsMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-d-channel/index.html"><span class="identifier">IDChannel</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.api.objects.json.interfaces/-i-d-object/index.html"><span class="identifier">IDObject</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span></code>
+<p>Received message with bits from channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-channel-hosted-event/index.html">ChannelHostedEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelHostedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.chat.events/-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-d-channel/index.html"><span class="identifier">IDChannel</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-channel-message-deleted-event/index.html">ChannelMessageDeletedEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelMessageDeletedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.api.objects.json.interfaces/-i-d-object/index.html"><span class="identifier">IDObject</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span></code>
+<p>Received message from channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-channel-message-event/index.html">ChannelMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.api.objects.json.interfaces/-i-d-object/index.html"><span class="identifier">IDObject</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.chat.events/-i-d-channel/index.html"><span class="identifier">IDChannel</span></a></code>
+<p>Received message from channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-channel-state-changed-event/index.html">ChannelStateChangedEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelStateChangedEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.chat.events/-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-d-channel/index.html"><span class="identifier">IDChannel</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-channel-state-event/index.html">ChannelStateEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelStateEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.chat.events/-i-channel/index.html"><span class="identifier">IChannel</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-d-channel/index.html"><span class="identifier">IDChannel</span></a></code>
+<p>Anonymous user gift a subscription on the channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-close-event/index.html">CloseEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CloseEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="../-close-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="../-close-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="../-close-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Emitting Close Event with <a href="../../glitch.api.ws/-close-status/index.html">glitch.api.ws.CloseStatus</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-error-response-event/index.html">ErrorResponseEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ErrorResponseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PubSubException</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchPubSub</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-gift-sub-event/index.html">GiftSubEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GiftSubEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span></code>
+<p>Someone gift subscription on the channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-i-r-c-event/index.html">IRCEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IRCEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-open-event/index.html">OpenEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">OpenEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="../-open-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="../-open-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="../-open-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Open Event emitting while connection in <a href="#">glitch.service.ISocketService</a> has started</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-ping-event/index.html">PingEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PingEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="../-ping-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="../-ping-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="../-ping-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Ping received</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-pong-event/index.html">PongEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PongEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="../-pong-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="../-pong-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="../-pong-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Pong received</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-private-message-event/index.html">PrivateMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PrivateMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-user/index.html"><span class="identifier">IUser</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-global-user-state/index.html"><span class="identifier">GlobalUserState</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../glitch.api.objects.json.interfaces/-i-d-object/index.html"><span class="identifier">IDObject</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-pub-sub-event/index.html">PubSubEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PubSubEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchPubSub</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-pub-sub-message-event/index.html">PubSubMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">PubSubMessageEvent</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchPubSub</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-reconnect-required-event/index.html">ReconnectRequiredEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ReconnectRequiredEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchPubSub</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-subscription-event/index.html">SubscriptionEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SubscriptionEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../../glitch.chat.events/-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span></code>
+<p>Someone subscribe channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-sucessful-response-event/index.html">SucessfulResponseEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SucessfulResponseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchPubSub</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-unknown-message-event/index.html">UnknownMessageEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UnknownMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchPubSub</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-user-joined-channel-event/index.html">UserJoinedChannelEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UserJoinedChannelEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span></code>
+<p>User has been joined to channel</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.chat.events/-user-leaving-channel-event/index.html">UserLeavingChannelEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UserLeavingChannelEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.chat.events/-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchChat</span><span class="symbol">&gt;</span></code>
+<p>User has been left channel</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

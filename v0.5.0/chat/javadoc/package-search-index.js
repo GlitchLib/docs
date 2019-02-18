@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"glitch.chat"},{"l":"glitch.chat.exceptions"},{"l":"glitch.chat.object.enums"}]

@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractEvent.<init> - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.api.ws.events</a>&nbsp;/&nbsp;<a href="index.html">AbstractEvent</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="glitch.api.ws.events.AbstractEvent$&lt;init&gt;(glitch.api.ws.events.AbstractEvent.S, java.time.Instant, java.util.UUID)"></a>
+<code><span class="keyword">protected</span> <span class="identifier">AbstractEvent</span><span class="symbol">(</span><span class="identifier" id="glitch.api.ws.events.AbstractEvent$<init>(glitch.api.ws.events.AbstractEvent.S, java.time.Instant, java.util.UUID)/client">client</span><span class="symbol">:</span>&nbsp;<a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.ws.events.AbstractEvent$<init>(glitch.api.ws.events.AbstractEvent.S, java.time.Instant, java.util.UUID)/createdAt">createdAt</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Instant.now()<span class="symbol">, </span><span class="identifier" id="glitch.api.ws.events.AbstractEvent$<init>(glitch.api.ws.events.AbstractEvent.S, java.time.Instant, java.util.UUID)/eventId">eventId</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a>&nbsp;<span class="symbol">=</span>&nbsp;UUID.randomUUID()<span class="symbol">)</span></code>
+<p>All events must be extends this class if they want to be emitted via <a href="#">reactor.core.publisher.FluxProcessor</a></p>
+<h3>Parameters</h3>
+<p><a name="S"></a>
+<code>S</code> - client extended <a href="../../glitch.service/-i-socket-service/index.html">glitch.service.ISocketService</a></p>
+<p><a name="client"></a>
+<code>client</code> - the <a href="../../glitch/-glitch-client/index.html">glitch.GlitchClient</a></p>
+<p><a name="createdAt"></a>
+<code>createdAt</code> - Event creation time</p>
+<p><a name="eventId"></a>
+<code>eventId</code> - unique Event ID</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski <a href="#">damian@stachuofficial.tv</a></p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+</BODY>
+</HTML>

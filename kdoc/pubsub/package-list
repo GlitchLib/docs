@@ -1,0 +1,9 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+glitch.pubsub
+glitch.pubsub.events
+glitch.pubsub.events.json
+glitch.pubsub.exceptions
+glitch.pubsub.object.adapters
+glitch.pubsub.object.enums

@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>glitch.service - core</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">core</a>&nbsp;/&nbsp;<a href="./index.html">glitch.service</a><br/>
+<br/>
+<h2>Package glitch.service</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-abstract-http-service/index.html">AbstractHttpService</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractHttpService</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-i-service/index.html"><span class="identifier">IService</span></a></code>
+<p>Abstract HTTP Service provides glitch.api.http.HttpClient for the RESTful operations for: <strong>Twitch API v5</strong> <code>glitch-kraken</code> and <strong>New Twitch API</strong> <code>glitch-helix</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-abstract-request/index.html">AbstractRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractRequest</span><span class="symbol">&lt;</span><span class="identifier">SINGLE</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">, </span><span class="identifier">MULTI</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../glitch.api.objects.json.interfaces/-ordinal-list/index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="-abstract-request/index.html#SINGLE"><span class="identifier">SINGLE</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-abstract-rest-service/index.html">AbstractRestService</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractRestService</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-i-service/index.html"><span class="identifier">IService</span></a></code>
+<p>The Abstract REST Service for Kraken and Helix endpoints</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-service/index.html">IService</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">IService</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-socket-service/index.html">ISocketService</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ISocketService</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-i-socket-service/index.html"><span class="identifier">ISocketService</span></a><span class="symbol">&lt;</span><a href="-i-socket-service/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-i-service/index.html"><span class="identifier">IService</span></a></code>
+<p>Abstract WebSocket Client using WebSocket to handling connections into services like: <strong>Twitch Message Interface</strong> <code>glitch-chat</code> and <strong>Twitch PubSub</strong> <code>glitch-pubsub</code> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

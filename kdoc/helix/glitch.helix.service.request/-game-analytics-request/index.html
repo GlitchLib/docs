@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GameAnalyticsRequest - helix</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">helix</a>&nbsp;/&nbsp;<a href="../index.html">glitch.helix.service.request</a>&nbsp;/&nbsp;<a href="./index.html">GameAnalyticsRequest</a><br/>
+<br/>
+<h1>GameAnalyticsRequest</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">GameAnalyticsRequest</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractRequest</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-game-data/index.html"><span class="identifier">GameData</span></a><span class="symbol">,</span>&nbsp;<a href="../../glitch.helix.object.json/-game-analytics/index.html"><span class="identifier">GameAnalytics</span></a><span class="symbol">&gt;</span></code>
+<p><strong>Author</strong><br/>
+Damian Staszewski [damian@stachuofficial.tv]</p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GameAnalyticsRequest</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$<init>(glitch.api.http.HttpClient, glitch.auth.objects.json.Credential)/httpClient">httpClient</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpClient</span><span class="symbol">, </span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$<init>(glitch.api.http.HttpClient, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get.html">get</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-game-analytics/index.html"><span class="identifier">GameAnalytics</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-after.html">setAfter</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setAfter</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$setAfter(kotlin.String)/after">after</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GameAnalyticsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-ended-at.html">setEndedAt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setEndedAt</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$setEndedAt(java.time.Instant)/endedAt">endedAt</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GameAnalyticsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-first.html">setFirst</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setFirst</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$setFirst(kotlin.Int)/first">first</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GameAnalyticsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-game.html">setGame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setGame</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$setGame(glitch.helix.object.json.Game)/game">game</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.helix.object.json/-game/index.html"><span class="identifier">Game</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GameAnalyticsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-started-at.html">setStartedAt</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setStartedAt</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$setStartedAt(java.time.Instant)/startedAt">startedAt</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GameAnalyticsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-type.html">setType</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setType</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.request.GameAnalyticsRequest$setType(glitch.helix.object.enums.AnalyticsReportType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.helix.object.enums/-analytics-report-type/index.html"><span class="identifier">AnalyticsReportType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GameAnalyticsRequest</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

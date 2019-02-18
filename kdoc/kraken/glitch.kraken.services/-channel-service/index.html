@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChannelService - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services</a>&nbsp;/&nbsp;<a href="./index.html">ChannelService</a><br/>
+<br/>
+<h1>ChannelService</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ChannelService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractHttpService</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChannelService</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$<init>(glitch.kraken.GlitchKraken)/rest">rest</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken/-glitch-kraken/index.html"><span class="identifier">GlitchKraken</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="check-channel-subscription-by-user.html">checkChannelSubscriptionByUser</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">checkChannelSubscriptionByUser</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$checkChannelSubscriptionByUser(glitch.kraken.object.json.Channel, glitch.kraken.object.json.User, glitch.auth.objects.json.Credential)/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$checkChannelSubscriptionByUser(glitch.kraken.object.json.Channel, glitch.kraken.object.json.User, glitch.auth.objects.json.Credential)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$checkChannelSubscriptionByUser(glitch.kraken.object.json.Channel, glitch.kraken.object.json.User, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-subscriber/index.html"><span class="identifier">Subscriber</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">checkChannelSubscriptionByUser</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$checkChannelSubscriptionByUser(kotlin.Long, kotlin.Long, glitch.auth.objects.json.Credential)/channelId">channelId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$checkChannelSubscriptionByUser(kotlin.Long, kotlin.Long, glitch.auth.objects.json.Credential)/userId">userId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$checkChannelSubscriptionByUser(kotlin.Long, kotlin.Long, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-subscriber/index.html"><span class="identifier">Subscriber</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="clear-channel-communities.html">clearChannelCommunities</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">clearChannelCommunities</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$clearChannelCommunities(kotlin.Long, glitch.auth.objects.json.Credential)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$clearChannelCommunities(kotlin.Long, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel.html">getChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannel(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-auth-channel/index.html"><span class="identifier">AuthChannel</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannel(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel-communities.html">getChannelCommunities</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelCommunities</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelCommunities(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-community/index.html"><span class="identifier">Community</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel-editors.html">getChannelEditors</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelEditors</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelEditors(kotlin.Long, glitch.auth.objects.json.Credential)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelEditors(kotlin.Long, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel-followers.html">getChannelFollowers</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelFollowers</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelFollowers(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-channel-user-follows-request/index.html"><span class="identifier">ChannelUserFollowsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel-subscribers.html">getChannelSubscribers</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelSubscribers</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelSubscribers(kotlin.Long, glitch.auth.objects.json.Credential)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelSubscribers(kotlin.Long, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-channel-subscribers-request/index.html"><span class="identifier">ChannelSubscribersRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel-teams.html">getChannelTeams</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelTeams</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelTeams(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-team/index.html"><span class="identifier">Team</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-channel-videos.html">getChannelVideos</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelVideos</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$getChannelVideos(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-channel-videos-request/index.html"><span class="identifier">ChannelVideosRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-stream-key.html">resetStreamKey</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">resetStreamKey</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$resetStreamKey(kotlin.Long, glitch.auth.objects.json.Credential)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$resetStreamKey(kotlin.Long, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-auth-channel/index.html"><span class="identifier">AuthChannel</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-channel-communities.html">setChannelCommunities</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setChannelCommunities</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$setChannelCommunities(kotlin.Long, glitch.auth.objects.json.Credential, kotlin.collections.MutableCollection((java.util.UUID)))/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$setChannelCommunities(kotlin.Long, glitch.auth.objects.json.Credential, kotlin.collections.MutableCollection((java.util.UUID)))/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$setChannelCommunities(kotlin.Long, glitch.auth.objects.json.Credential, kotlin.collections.MutableCollection((java.util.UUID)))/communityIds">communityIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-channel-commercial.html">startChannelCommercial</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startChannelCommercial</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$startChannelCommercial(kotlin.Long, glitch.auth.objects.json.Credential, kotlin.Int)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$startChannelCommercial(kotlin.Long, glitch.auth.objects.json.Credential, kotlin.Int)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$startChannelCommercial(kotlin.Long, glitch.auth.objects.json.Credential, kotlin.Int)/duration">duration</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-commercial-data/index.html"><span class="identifier">CommercialData</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-channel.html">updateChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$updateChannel(glitch.auth.objects.json.Credential, glitch.kraken.object.json.ChannelBody)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$updateChannel(glitch.auth.objects.json.Credential, glitch.kraken.object.json.ChannelBody)/data">data</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel-body/index.html"><span class="identifier">ChannelBody</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChannelService$updateChannel(kotlin.Long, glitch.auth.objects.json.Credential, glitch.kraken.object.json.ChannelBody)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$updateChannel(kotlin.Long, glitch.auth.objects.json.Credential, glitch.kraken.object.json.ChannelBody)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.ChannelService$updateChannel(kotlin.Long, glitch.auth.objects.json.Credential, glitch.kraken.object.json.ChannelBody)/body">body</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel-body/index.html"><span class="identifier">ChannelBody</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

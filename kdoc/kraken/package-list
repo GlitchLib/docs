@@ -1,0 +1,11 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+glitch.kraken
+glitch.kraken.object.adapters
+glitch.kraken.object.enums
+glitch.kraken.object.json
+glitch.kraken.object.json.collections
+glitch.kraken.object.json.impl
+glitch.kraken.services
+glitch.kraken.services.request

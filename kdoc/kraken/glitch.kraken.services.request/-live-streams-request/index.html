@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LiveStreamsRequest - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services.request</a>&nbsp;/&nbsp;<a href="./index.html">LiveStreamsRequest</a><br/>
+<br/>
+<h1>LiveStreamsRequest</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">LiveStreamsRequest</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractRequest</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-stream/index.html"><span class="identifier">Stream</span></a><span class="symbol">,</span>&nbsp;<a href="../../glitch.kraken.object.json.collections/-streams/index.html"><span class="identifier">Streams</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">LiveStreamsRequest</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$<init>(glitch.api.http.HttpClient)/http">http</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpClient</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-channel.html">addChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addChannel</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$addChannel(kotlin.Array((glitch.kraken.object.json.Channel)))/languages">languages</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$addChannel(kotlin.collections.MutableCollection((glitch.kraken.object.json.Channel)))/languages">languages</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get.html">get</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json.collections/-streams/index.html"><span class="identifier">Streams</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-game.html">setGame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setGame</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$setGame(glitch.kraken.object.json.Game)/game">game</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-game/index.html"><span class="identifier">Game</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-langauge.html">setLangauge</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setLangauge</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$setLangauge(java.util.Locale)/langauge">langauge</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Locale.html"><span class="identifier">Locale</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-limit.html">setLimit</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setLimit</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$setLimit(kotlin.Int)/limit">limit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-offset.html">setOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setOffset</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$setOffset(kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-stream-type.html">setStreamType</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setStreamType</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.LiveStreamsRequest$setStreamType(glitch.kraken.object.enums.StreamType)/streamType">streamType</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.enums/-stream-type/index.html"><span class="identifier">StreamType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LiveStreamsRequest</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

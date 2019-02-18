@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ISocketService - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.service</a>&nbsp;/&nbsp;<a href="./index.html">ISocketService</a><br/>
+<br/>
+<h1>ISocketService</h1>
+<code><span class="keyword">interface </span><span class="identifier">ISocketService</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ISocketService</span></a><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-i-service/index.html"><span class="identifier">IService</span></a></code>
+<p>Abstract WebSocket Client using WebSocket to handling connections into services like: <strong>Twitch Message Interface</strong> <code>glitch-chat</code> and <strong>Twitch PubSub</strong> <code>glitch-pubsub</code> </p>
+<h3>Parameters</h3>
+<p><a name="&lt;S&gt;"></a>
+<code><S></code> - extending ISocketService</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski [damian@stachuofficial.tv]</p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="login.html">login</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">login</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code>
+<p>Establish connection to the glitch.api.ws.WebSocket service</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="logout.html">logout</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">logout</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Disconnecting from service</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-event.html">onEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">onEvent</span><span class="symbol">(</span><span class="identifier" id="glitch.service.ISocketService$onEvent(java.lang.Class((glitch.service.ISocketService.onEvent.E)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="on-event.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="on-event.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span></code>
+<p>Dispatch event using reactor.core.publisher.FluxProcessor</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="retry.html">retry</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">retry</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code>
+<p>Retrying connection from the service</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-i-service/get-client.html">getClient</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getClient</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch/-glitch-client/index.html"><span class="identifier">GlitchClient</span></a></code>
+<p>Getting GlitchClient</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../glitch.api.ws/on-event.html">onEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.api.ws.events/-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="../../glitch.api.ws/on-event.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ISocketService</span></a><span class="symbol">&lt;</span><a href="../../glitch.api.ws/on-event.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="../../glitch.api.ws/on-event.html#S"><span class="identifier">S</span></a><span class="symbol">.</span><span class="identifier">onEvent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.api.ws/on-event.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

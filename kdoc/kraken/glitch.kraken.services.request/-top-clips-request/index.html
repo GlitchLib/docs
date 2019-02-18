@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TopClipsRequest - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services.request</a>&nbsp;/&nbsp;<a href="./index.html">TopClipsRequest</a><br/>
+<br/>
+<h1>TopClipsRequest</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TopClipsRequest</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractRequest</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-clip/index.html"><span class="identifier">Clip</span></a><span class="symbol">,</span>&nbsp;<a href="../../glitch.kraken.object.json.collections/-clips/index.html"><span class="identifier">Clips</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TopClipsRequest</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$<init>(glitch.api.http.HttpClient)/httpClient">httpClient</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpClient</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-language.html">addLanguage</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addLanguage</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$addLanguage(kotlin.Array((java.util.Locale)))/language">language</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Locale.html"><span class="identifier">Locale</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addLanguage</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$addLanguage(kotlin.Array((kotlin.String)))/language">language</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addLanguage</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$addLanguage(kotlin.collections.MutableCollection((java.util.Locale)))/language">language</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Locale.html"><span class="identifier">Locale</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get.html">get</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json.collections/-clips/index.html"><span class="identifier">Clips</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-channel.html">setChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$setChannel(glitch.kraken.object.json.Channel)/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-cursor.html">setCursor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setCursor</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$setCursor(kotlin.String)/cursor">cursor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-game.html">setGame</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setGame</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$setGame(glitch.kraken.object.json.Game)/game">game</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-game/index.html"><span class="identifier">Game</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-limit.html">setLimit</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setLimit</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$setLimit(kotlin.Long)/limit">limit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-period.html">setPeriod</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setPeriod</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$setPeriod(glitch.kraken.object.enums.ClipPeriod)/period">period</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.enums/-clip-period/index.html"><span class="identifier">ClipPeriod</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-trending.html">setTrending</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setTrending</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.request.TopClipsRequest$setTrending(kotlin.Boolean)/trending">trending</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

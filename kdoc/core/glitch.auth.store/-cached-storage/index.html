@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CachedStorage - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.auth.store</a>&nbsp;/&nbsp;<a href="./index.html">CachedStorage</a><br/>
+<br/>
+<h1>CachedStorage</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CachedStorage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-storage/index.html"><span class="identifier">Storage</span></a></code>
+<p>Cached storage storing only in active JVM session using Collection</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CachedStorage</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.store.CachedStorage$<init>(kotlin.collections.MutableCollection((glitch.auth.objects.json.Credential)))/credentials">credentials</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="drop.html">drop</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">drop</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.store.CachedStorage$drop(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code>
+<p>{@inheritDoc}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fetch-all.html">fetchAll</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">fetchAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code>
+<p>{@inheritDoc}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get.html">get</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.store.CachedStorage$get(java.util.function.Predicate((glitch.auth.objects.json.Credential)))/condition">condition</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html"><span class="identifier">Predicate</span></a><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code>
+<p>{@inheritDoc}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="register.html">register</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">register</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.store.CachedStorage$register(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code>
+<p>{@inheritDoc}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-storage/get-by-id.html">getById</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getById</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.store.Storage$getById(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code>
+<p>Getting credential by ID</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-storage/get-by-login.html">getByLogin</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getByLogin</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.store.Storage$getByLogin(kotlin.String)/loginRegex">loginRegex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code>
+<p>Getting credentials by Login filtered via <a href="#">Regular Expression</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

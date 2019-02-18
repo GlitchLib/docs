@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>glitch.api.ws.events - all</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">all</a>&nbsp;/&nbsp;<a href="./index.html">glitch.api.ws.events</a><br/>
+<br/>
+<h2>Package glitch.api.ws.events</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-abstract-event/index.html">AbstractEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="-abstract-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="-abstract-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>All events must be extends this class if they want to be emitted via <a href="#">reactor.core.publisher.FluxProcessor</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-close-event/index.html">CloseEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CloseEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="-close-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="-close-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="-close-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Emitting Close Event with <a href="../glitch.api.ws/-close-status/index.html">glitch.api.ws.CloseStatus</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-i-event/index.html">IEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">IEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="-i-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Event Interface</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-open-event/index.html">OpenEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">OpenEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="-open-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="-open-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="-open-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Open Event emitting while connection in <a href="#">glitch.service.ISocketService</a> has started</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-ping-event/index.html">PingEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PingEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="-ping-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="-ping-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="-ping-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Ping received</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-pong-event/index.html">PongEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PongEvent</span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ISocketService</span><span class="symbol">&lt;</span><a href="-pong-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-event/index.html"><span class="identifier">AbstractEvent</span></a><span class="symbol">&lt;</span><a href="-pong-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="-i-event/index.html"><span class="identifier">IEvent</span></a><span class="symbol">&lt;</span><a href="-pong-event/index.html#S"><span class="identifier">S</span></a><span class="symbol">&gt;</span></code>
+<p>Pong received</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

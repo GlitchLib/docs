@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PubSubException - pubsub</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubsub</a>&nbsp;/&nbsp;<a href="../index.html">glitch.pubsub.exceptions</a>&nbsp;/&nbsp;<a href="./index.html">PubSubException</a><br/>
+<br/>
+<h1>PubSubException</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PubSubException</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GlitchException</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PubSubException</span><span class="symbol">(</span><span class="identifier" id="glitch.pubsub.exceptions.PubSubException$<init>(kotlin.String, kotlin.Throwable)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.pubsub.exceptions.PubSubException$<init>(kotlin.String, kotlin.Throwable)/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">PubSubException</span><span class="symbol">(</span><span class="identifier" id="glitch.pubsub.exceptions.PubSubException$<init>(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">PubSubException</span><span class="symbol">(</span><span class="identifier" id="glitch.pubsub.exceptions.PubSubException$<init>(kotlin.Throwable)/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../glitch.pubsub.events/-error-response-event/index.html">ErrorResponseEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ErrorResponseEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PubSubException</span></a><span class="symbol">, </span><span class="identifier">IEvent</span><span class="symbol">&lt;</span><a href="../../glitch.pubsub/-glitch-pub-sub/index.html"><span class="identifier">GlitchPubSub</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-topic-exception/index.html">TopicException</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TopicException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PubSubException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-unknown-topic-exception/index.html">UnknownTopicException</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">UnknownTopicException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PubSubException</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

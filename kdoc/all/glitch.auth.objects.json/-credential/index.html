@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Credential - all</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">all</a>&nbsp;/&nbsp;<a href="../index.html">glitch.auth.objects.json</a>&nbsp;/&nbsp;<a href="./index.html">Credential</a><br/>
+<br/>
+<h1>Credential</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Credential</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-access-token/index.html"><span class="identifier">AccessToken</span></a><span class="symbol">, </span><a href="../-validate/index.html"><span class="identifier">Validate</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Credential</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(glitch.auth.objects.json.AccessToken, glitch.auth.objects.json.Validate)/token">token</span><span class="symbol">:</span>&nbsp;<a href="../-access-token/index.html"><span class="identifier">AccessToken</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(glitch.auth.objects.json.AccessToken, glitch.auth.objects.json.Validate)/validate">validate</span><span class="symbol">:</span>&nbsp;<a href="../-validate/index.html"><span class="identifier">Validate</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">Credential</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(glitch.auth.UserCredential, glitch.auth.objects.json.Validate)/token">token</span><span class="symbol">:</span>&nbsp;<span class="identifier">UserCredential</span><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(glitch.auth.UserCredential, glitch.auth.objects.json.Validate)/validate">validate</span><span class="symbol">:</span>&nbsp;<a href="../-validate/index.html"><span class="identifier">Validate</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">Credential</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/accessToken">accessToken</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/refreshToken">refreshToken</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/expiredAt">expiredAt</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/scopes">scopes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchScope</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/clientId">clientId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/login">login</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.objects.json.Credential$<init>(kotlin.String, kotlin.String, java.time.Instant, kotlin.collections.Set((glitch.auth.GlitchScope)), kotlin.String, kotlin.String, kotlin.Long)/userId">userId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="access-token.html">accessToken</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">accessToken</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="client-id.html">clientId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">clientId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="expired-at.html">expiredAt</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">expiredAt</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="login.html">login</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">login</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh-token.html">refreshToken</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">refreshToken</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="scopes.html">scopes</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">scopes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">GlitchScope</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="user-id.html">userId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">userId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

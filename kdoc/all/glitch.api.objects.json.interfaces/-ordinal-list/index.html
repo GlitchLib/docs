@@ -1,0 +1,252 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OrdinalList - all</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">all</a>&nbsp;/&nbsp;<a href="../index.html">glitch.api.objects.json.interfaces</a>&nbsp;/&nbsp;<a href="./index.html">OrdinalList</a><br/>
+<br/>
+<h1>OrdinalList</h1>
+<code><span class="keyword">interface </span><span class="identifier">OrdinalList</span><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="index.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span></code>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="data.html">data</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">data</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="index.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="size.html">size</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">size</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="contains.html">contains</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="glitch.api.objects.json.interfaces.OrdinalList$contains(glitch.api.objects.json.interfaces.OrdinalList.E)/element">element</span><span class="symbol">:</span>&nbsp;<a href="index.html#E"><span class="identifier">E</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="contains-all.html">containsAll</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">containsAll</span><span class="symbol">(</span><span class="identifier" id="glitch.api.objects.json.interfaces.OrdinalList$containsAll(kotlin.collections.Collection((glitch.api.objects.json.interfaces.OrdinalList.E)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="index.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-empty.html">isEmpty</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="iterator.html">iterator</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">iterator</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html"><span class="identifier">Iterator</span></a><span class="symbol">&lt;</span><a href="index.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-bits-leaderboard/index.html">BitsLeaderboard</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BitsLeaderboard</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-bits/index.html"><span class="identifier">Bits</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-channel-user-follows/index.html">ChannelUserFollows</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelUserFollows</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel-user-follow/index.html"><span class="identifier">ChannelUserFollow</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-channels/index.html">Channels</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Channels</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-channel/index.html"><span class="identifier">Channel</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-chat-rooms/index.html">ChatRooms</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChatRooms</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-chat-room/index.html"><span class="identifier">ChatRoom</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-cheermotes/index.html">Cheermotes</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Cheermotes</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-cheermote/index.html"><span class="identifier">Cheermote</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-codes/index.html">Codes</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Codes</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-code/index.html"><span class="identifier">Code</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-communities/index.html">Communities</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Communities</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-community/index.html"><span class="identifier">Community</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-cursor-list/index.html">CursorList</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">CursorList</span><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../-cursor-list/index.html#E"><span class="identifier">E</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-editors/index.html">Editors</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Editors</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-emotes/index.html">Emotes</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Emotes</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-emote/index.html"><span class="identifier">Emote</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-extension-analytics/index.html">ExtensionAnalytics</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ExtensionAnalytics</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-extension-report/index.html"><span class="identifier">ExtensionReport</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-extensions/index.html">Extensions</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Extensions</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-extension/index.html"><span class="identifier">Extension</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-feature-streams/index.html">FeatureStreams</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FeatureStreams</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-feature-stream/index.html"><span class="identifier">FeatureStream</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-game-analytics/index.html">GameAnalytics</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GameAnalytics</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-game-data/index.html"><span class="identifier">GameData</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-games/index.html">Games</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Games</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-game/index.html"><span class="identifier">Game</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json/-ingest-collection/index.html">IngestCollection</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IngestCollection</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-ingest/index.html"><span class="identifier">Ingest</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-ingest/index.html"><span class="identifier">Ingest</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-ingests/index.html">Ingests</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Ingests</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-ingest/index.html"><span class="identifier">Ingest</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-installed-extensions/index.html">InstalledExtensions</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InstalledExtensions</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-installed-extension/index.html"><span class="identifier">InstalledExtension</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-single-clip-create/index.html">SingleClipCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SingleClipCreate</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-clip-create/index.html"><span class="identifier">ClipCreate</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-streams/index.html">Streams</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Streams</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-stream/index.html"><span class="identifier">Stream</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-subscribers/index.html">Subscribers</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Subscribers</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-subscriber/index.html"><span class="identifier">Subscriber</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-teams/index.html">Teams</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Teams</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-team/index.html"><span class="identifier">Team</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-upload-entitlement/index.html">UploadEntitlement</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UploadEntitlement</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-upload-data/index.html"><span class="identifier">UploadData</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.helix.object.json/-users/index.html">Users</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Users</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-users/index.html">Users</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Users</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../glitch.kraken.object.json.collections/-videos/index.html">Videos</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Videos</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">OrdinalList</span></a><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-video/index.html"><span class="identifier">Video</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

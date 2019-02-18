@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UserService - helix</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">helix</a>&nbsp;/&nbsp;<a href="../index.html">glitch.helix.service</a>&nbsp;/&nbsp;<a href="./index.html">UserService</a><br/>
+<br/>
+<h1>UserService</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">UserService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractHttpService</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">UserService</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$<init>(glitch.helix.GlitchHelix)/helix">helix</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.helix/-glitch-helix/index.html"><span class="identifier">GlitchHelix</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-user-extensions.html">getUserExtensions</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserExtensions</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUserExtensions(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-extension/index.html"><span class="identifier">Extension</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-installed-extensions.html">getUserInstalledExtensions</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserInstalledExtensions</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUserInstalledExtensions(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-installed-extension/index.html"><span class="identifier">InstalledExtension</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUserInstalledExtensions</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUserInstalledExtensions(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-installed-extension/index.html"><span class="identifier">InstalledExtension</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-users-by-id.html">getUsersById</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsersById</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUsersById(glitch.auth.objects.json.Credential, kotlin.Array((kotlin.Long)))/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">?</span><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="glitch.helix.service.UserService$getUsersById(glitch.auth.objects.json.Credential, kotlin.Array((kotlin.Long)))/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-users-by-login.html">getUsersByLogin</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsersByLogin</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUsersByLogin(glitch.auth.objects.json.Credential, kotlin.Array((kotlin.String)))/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">?</span><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="glitch.helix.service.UserService$getUsersByLogin(glitch.auth.objects.json.Credential, kotlin.Array((kotlin.String)))/login">login</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-users-following.html">getUsersFollowing</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsersFollowing</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUsersFollowing(glitch.helix.object.json.User)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.helix.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.helix.service.request/-user-follow-request/index.html"><span class="identifier">UserFollowRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-users-follows.html">getUsersFollows</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getUsersFollows</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$getUsersFollows(glitch.helix.object.json.User)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.helix.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.helix.service.request/-user-follow-request/index.html"><span class="identifier">UserFollowRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-user.html">updateUser</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateUser</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$updateUser(glitch.auth.objects.json.Credential, kotlin.String)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.helix.service.UserService$updateUser(glitch.auth.objects.json.Credential, kotlin.String)/description">description</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.helix.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-user-extension.html">updateUserExtension</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateUserExtension</span><span class="symbol">(</span><span class="identifier" id="glitch.helix.service.UserService$updateUserExtension(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

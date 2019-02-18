@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VideoService - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services</a>&nbsp;/&nbsp;<a href="./index.html">VideoService</a><br/>
+<br/>
+<h1>VideoService</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">VideoService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractHttpService</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">VideoService</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.VideoService$<init>(glitch.kraken.GlitchKraken)/rest">rest</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken/-glitch-kraken/index.html"><span class="identifier">GlitchKraken</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-upload.html">createUpload</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">createUpload</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.VideoService$createUpload(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete.html">delete</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.VideoService$delete(glitch.kraken.object.json.Video, glitch.auth.objects.json.Credential)/video">video</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-video/index.html"><span class="identifier">Video</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.VideoService$delete(glitch.kraken.object.json.Video, glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-top-videos.html">getTopVideos</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTopVideos</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-top-videos-request/index.html"><span class="identifier">TopVideosRequest</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTopVideos</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.VideoService$getTopVideos(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-followed-videos-request/index.html"><span class="identifier">FollowedVideosRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-video.html">getVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getVideo</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.VideoService$getVideo(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-video/index.html"><span class="identifier">Video</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-video.html">updateVideo</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateVideo</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.VideoService$updateVideo(kotlin.Long, glitch.auth.objects.json.Credential, glitch.kraken.object.json.VideoBody)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.VideoService$updateVideo(kotlin.Long, glitch.auth.objects.json.Credential, glitch.kraken.object.json.VideoBody)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">, </span><span class="identifier" id="glitch.kraken.services.VideoService$updateVideo(kotlin.Long, glitch.auth.objects.json.Credential, glitch.kraken.object.json.VideoBody)/body">body</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-video-body/index.html"><span class="identifier">VideoBody</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-video/index.html"><span class="identifier">Video</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

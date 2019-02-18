@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"glitch.pubsub"},{"l":"glitch.pubsub.exceptions"},{"l":"glitch.pubsub.object.adapters"},{"l":"glitch.pubsub.object.enums"}]

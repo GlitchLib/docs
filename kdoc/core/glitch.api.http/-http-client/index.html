@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HttpClient - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.api.http</a>&nbsp;/&nbsp;<a href="./index.html">HttpClient</a><br/>
+<br/>
+<h1>HttpClient</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HttpClient</span></code>
+<p>The HTTP Client provided for glitch.service.AbstractHttpService</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski [damian@stachuofficial.tv]</p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-builder/index.html">Builder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Builder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="builder.html">builder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">builder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-builder/index.html"><span class="identifier">Builder</span></a></code>
+<p>Build HTTP Client</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create.html">create</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpClient$create(glitch.api.http.HttpMethod, kotlin.String)/method">method</span><span class="symbol">:</span>&nbsp;<a href="../-http-method/index.html"><span class="identifier">HttpMethod</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpClient$create(glitch.api.http.HttpMethod, kotlin.String)/endpoint">endpoint</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-http-request/index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Creating HTTP Request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="exchange.html">exchange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">exchange</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpClient$exchange(glitch.api.http.HttpRequest)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-http-request/index.html"><span class="identifier">HttpRequest</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../-http-response/index.html"><span class="identifier">HttpResponse</span></a><span class="symbol">&gt;</span></code>
+<p>Starting exchange data of Http Client</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="exchange-as.html">exchangeAs</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">exchangeAs</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpClient$exchangeAs(glitch.api.http.HttpRequest, java.lang.Class((glitch.api.http.HttpClient.exchangeAs.T)))/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-http-request/index.html"><span class="identifier">HttpRequest</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpClient$exchangeAs(glitch.api.http.HttpRequest, java.lang.Class((glitch.api.http.HttpClient.exchangeAs.T)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="exchange-as.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="exchange-as.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span></code>
+<p>Starting exchange data of Http Client</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-gson.html">getGson</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getGson</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Gson</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

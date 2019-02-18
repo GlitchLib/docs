@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HttpResponse - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.api.http</a>&nbsp;/&nbsp;<a href="./index.html">HttpResponse</a><br/>
+<br/>
+<h1>HttpResponse</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HttpResponse</span></code>
+<p>HTTP Response <code><a href="../-http-client/exchange.html">Exchanged</a></code> via HttpRequest The last one must be composed into implemented Iterable interface.</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski [damian@stachuofficial.tv]</p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-status/index.html">Status</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Status</span></code>
+<p>Response Status POJO</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">HttpResponse</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpResponse$<init>(glitch.api.http.HttpResponse.Status, org.apache.commons.collections4.MultiValuedMap((kotlin.String, )), kotlin.ByteArray, glitch.api.http.HttpRequest, com.google.gson.Gson)/status">status</span><span class="symbol">:</span>&nbsp;<a href="-status/index.html"><span class="identifier">Status</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpResponse$<init>(glitch.api.http.HttpResponse.Status, org.apache.commons.collections4.MultiValuedMap((kotlin.String, )), kotlin.ByteArray, glitch.api.http.HttpRequest, com.google.gson.Gson)/headers">headers</span><span class="symbol">:</span>&nbsp;<span class="identifier">MultiValuedMap</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpResponse$<init>(glitch.api.http.HttpResponse.Status, org.apache.commons.collections4.MultiValuedMap((kotlin.String, )), kotlin.ByteArray, glitch.api.http.HttpRequest, com.google.gson.Gson)/body">body</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpResponse$<init>(glitch.api.http.HttpResponse.Status, org.apache.commons.collections4.MultiValuedMap((kotlin.String, )), kotlin.ByteArray, glitch.api.http.HttpRequest, com.google.gson.Gson)/request">request</span><span class="symbol">:</span>&nbsp;<a href="../-http-request/index.html"><span class="identifier">HttpRequest</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpResponse$<init>(glitch.api.http.HttpResponse.Status, org.apache.commons.collections4.MultiValuedMap((kotlin.String, )), kotlin.ByteArray, glitch.api.http.HttpRequest, com.google.gson.Gson)/gson">gson</span><span class="symbol">:</span>&nbsp;<span class="identifier">Gson</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-body.html">getBody</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBody</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-body-as.html">getBodyAs</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">getBodyAs</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpResponse$getBodyAs(java.lang.Class((glitch.api.http.HttpResponse.getBodyAs.T)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="get-body-as.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="get-body-as.html#T"><span class="identifier">T</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-body-string.html">getBodyString</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBodyString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-header.html">getHeader</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getHeader</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpResponse$getHeader(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code>
+<p>Getting values of Key Header</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getHeader</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpResponse$getHeader(kotlin.String, kotlin.Int)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpResponse$getHeader(kotlin.String, kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Getting value of Key Header and value index</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-headers.html">getHeaders</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getHeaders</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MultiValuedMap</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-request.html">getRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRequest</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-http-request/index.html"><span class="identifier">HttpRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-status.html">getStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-status/index.html"><span class="identifier">Status</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-error.html">isError</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Status codes are in the HTTP Error Code range</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="is-successful.html">isSuccessful</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isSuccessful</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Status codes are in the HTTP Code range</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

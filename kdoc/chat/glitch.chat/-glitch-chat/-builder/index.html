@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GlitchChat.Builder - chat</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">chat</a>&nbsp;/&nbsp;<a href="../../index.html">glitch.chat</a>&nbsp;/&nbsp;<a href="../index.html">GlitchChat</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Builder</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-channel.html">addChannel</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addChannel</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.chat.GlitchChat.Builder$addChannel(kotlin.Array((kotlin.String)))/channel">channel</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addChannel</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$addChannel(kotlin.collections.MutableCollection((kotlin.String)))/channels">channels</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-shutdown-hook.html">addShutdownHook</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addShutdownHook</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="build.html">build</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../index.html"><span class="identifier">GlitchChat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="build-async.html">buildAsync</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildAsync</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../index.html"><span class="identifier">GlitchChat</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-auto-ping-disabled.html">setAutoPingDisabled</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setAutoPingDisabled</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setAutoPingDisabled(kotlin.Boolean)/autoPingDisabled">autoPingDisabled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-bot-credential.html">setBotCredential</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setBotCredential</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setBotCredential(glitch.auth.UserCredential)/botCredential">botCredential</span><span class="symbol">:</span>&nbsp;<span class="identifier">UserCredential</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setBotCredential</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setBotCredential(kotlin.String, kotlin.String)/accessToken">accessToken</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setBotCredential(kotlin.String, kotlin.String)/refreshToken">refreshToken</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-event-processor.html">setEventProcessor</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setEventProcessor</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setEventProcessor(reactor.core.publisher.FluxProcessor((glitch.api.ws.events.IEvent((glitch.chat.GlitchChat)), )))/eventProcessor">eventProcessor</span><span class="symbol">:</span>&nbsp;<span class="identifier">FluxProcessor</span><span class="symbol">&lt;</span><span class="identifier">IEvent</span><span class="symbol">&lt;</span><a href="../index.html"><span class="identifier">GlitchChat</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<span class="identifier">IEvent</span><span class="symbol">&lt;</span><a href="../index.html"><span class="identifier">GlitchChat</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-force-query.html">setForceQuery</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setForceQuery</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setForceQuery(kotlin.Boolean)/forceQuery">forceQuery</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-scheduler.html">setScheduler</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setScheduler</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setScheduler(reactor.core.scheduler.Scheduler)/scheduler">scheduler</span><span class="symbol">:</span>&nbsp;<span class="identifier">Scheduler</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-secure.html">setSecure</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setSecure</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.GlitchChat.Builder$setSecure(kotlin.Boolean)/secure">secure</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

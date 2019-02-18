@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChatService - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services</a>&nbsp;/&nbsp;<a href="./index.html">ChatService</a><br/>
+<br/>
+<h1>ChatService</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ChatService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractHttpService</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChatService</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChatService$<init>(glitch.kraken.GlitchKraken)/rest">rest</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken/-glitch-kraken/index.html"><span class="identifier">GlitchKraken</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-all-emoticons.html">getAllEmoticons</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAllEmoticons</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-emote/index.html"><span class="identifier">Emote</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-chat-badges.html">getChatBadges</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChatBadges</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChatService$getChatBadges(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-chat-badges/index.html"><span class="identifier">ChatBadges</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-chat-emote-sets.html">getChatEmoteSets</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChatEmoteSets</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="glitch.kraken.services.ChatService$getChatEmoteSets(kotlin.Array((kotlin.Int)))/ids">ids</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json.collections/-emote-sets/index.html"><span class="identifier">EmoteSets</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChatEmoteSets</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChatService$getChatEmoteSets(kotlin.collections.MutableCollection((kotlin.Int)))/ids">ids</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html"><span class="identifier">MutableCollection</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json.collections/-emote-sets/index.html"><span class="identifier">EmoteSets</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-chat-rooms.html">getChatRooms</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChatRooms</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChatService$getChatRooms(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Flux</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-chat-room/index.html"><span class="identifier">ChatRoom</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-chat-user-state.html">getChatUserState</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChatUserState</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChatService$getChatUserState(glitch.kraken.object.json.User)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken.object.json/-user/index.html"><span class="identifier">User</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-global-user-state/index.html"><span class="identifier">GlobalUserState</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChatUserState</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ChatService$getChatUserState(kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-global-user-state/index.html"><span class="identifier">GlobalUserState</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

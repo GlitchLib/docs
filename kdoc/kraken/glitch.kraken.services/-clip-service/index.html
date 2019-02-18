@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClipService - kraken</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">kraken</a>&nbsp;/&nbsp;<a href="../index.html">glitch.kraken.services</a>&nbsp;/&nbsp;<a href="./index.html">ClipService</a><br/>
+<br/>
+<h1>ClipService</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ClipService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AbstractHttpService</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ClipService</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ClipService$<init>(glitch.kraken.GlitchKraken)/rest">rest</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.kraken/-glitch-kraken/index.html"><span class="identifier">GlitchKraken</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-clip.html">getClip</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getClip</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ClipService$getClip(kotlin.String)/slug">slug</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.kraken.object.json/-clip/index.html"><span class="identifier">Clip</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-followed-clips.html">getFollowedClips</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getFollowedClips</span><span class="symbol">(</span><span class="identifier" id="glitch.kraken.services.ClipService$getFollowedClips(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<span class="identifier">Credential</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-followed-clips-request/index.html"><span class="identifier">FollowedClipsRequest</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-top-clips.html">getTopClips</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTopClips</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.kraken.services.request/-top-clips-request/index.html"><span class="identifier">TopClipsRequest</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

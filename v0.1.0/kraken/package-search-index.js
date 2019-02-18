@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"glitch.kraken"},{"l":"glitch.kraken.json"},{"l":"glitch.kraken.json.lists"},{"l":"glitch.kraken.presence"},{"l":"glitch.kraken.services"}]

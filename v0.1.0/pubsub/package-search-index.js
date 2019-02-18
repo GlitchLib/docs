@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"glitch.pubsub"}]

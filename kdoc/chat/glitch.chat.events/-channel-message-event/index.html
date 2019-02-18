@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChannelMessageEvent - chat</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">chat</a>&nbsp;/&nbsp;<a href="../index.html">glitch.chat.events</a>&nbsp;/&nbsp;<a href="./index.html">ChannelMessageEvent</a><br/>
+<br/>
+<h1>ChannelMessageEvent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChannelMessageEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-i-message/index.html"><span class="identifier">IMessage</span></a><span class="symbol">, </span><a href="../-i-channel-user.html"><span class="identifier">IChannelUser</span></a><span class="symbol">, </span><a href="../-channel-user-state/index.html"><span class="identifier">ChannelUserState</span></a><span class="symbol">, </span><span class="identifier">IEvent</span><span class="symbol">&lt;</span><a href="../../glitch.chat/-glitch-chat/index.html"><span class="identifier">GlitchChat</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">IDObject</span><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../-i-d-channel/index.html"><span class="identifier">IDChannel</span></a></code>
+<p>Received message from channel</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski <a href="#">damian@stachuofficial.tv</a></p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChannelMessageEvent</span><span class="symbol">(</span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/client">client</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.chat/-glitch-chat/index.html"><span class="identifier">GlitchChat</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/id">id</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/channelId">channelId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/userId">userId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/badges">badges</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">Badge</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/color">color</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/awt/Color.html"><span class="identifier">Color</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/userType">userType</span><span class="symbol">:</span>&nbsp;<span class="identifier">UserType</span><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/displayName">displayName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/channelName">channelName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/username">username</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/createdAt">createdAt</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a><span class="symbol">, </span><span class="identifier" id="glitch.chat.events.ChannelMessageEvent$<init>(glitch.chat.GlitchChat, java.util.UUID, kotlin.Long, kotlin.Long, kotlin.collections.Set((glitch.api.objects.json.Badge)), java.awt.Color, glitch.api.objects.enums.UserType, kotlin.String, kotlin.String, kotlin.String, kotlin.String, java.time.Instant, kotlin.Boolean)/isActionMessage">isActionMessage</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span></code>
+<p>Received message from channel</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="badges.html">badges</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">badges</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">Badge</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="channel-id.html">channelId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">channelId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="channel-name.html">channelName</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">channelName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="client.html">client</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">client</span><span class="symbol">: </span><a href="../../glitch.chat/-glitch-chat/index.html"><span class="identifier">GlitchChat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="color.html">color</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">color</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/awt/Color.html"><span class="identifier">Color</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="created-at.html">createdAt</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">createdAt</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="display-name.html">displayName</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">displayName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-action-message.html">isActionMessage</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isActionMessage</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="message.html">message</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">message</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="user-id.html">userId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">userId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="user-type.html">userType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">userType</span><span class="symbol">: </span><span class="identifier">UserType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="username.html">username</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">username</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-channel-user-state/is-broadcaster.html">isBroadcaster</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">isBroadcaster</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-user-state/is-mod.html">isMod</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">isMod</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-user-state/is-subscriber.html">isSubscriber</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">isSubscriber</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-channel-user-state/is-vip.html">isVip</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">isVip</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

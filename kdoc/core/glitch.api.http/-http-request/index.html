@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HttpRequest - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.api.http</a>&nbsp;/&nbsp;<a href="./index.html">HttpRequest</a><br/>
+<br/>
+<h1>HttpRequest</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HttpRequest</span></code>
+<p>HTTP Request created by <code>{ HttpClient#create(HttpMethod, String, Class)}</code>. This is a ordinal Request Builder.</p>
+<p><strong>Author</strong><br/>
+Damian Staszewski [damian@stachuofficial.tv]</p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-body-type/index.html">BodyType</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BodyType</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="body.html">body</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">body</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$body(glitch.api.http.HttpRequest.BodyType, kotlin.Any, kotlin.Boolean)/bodyType">bodyType</span><span class="symbol">:</span>&nbsp;<a href="-body-type/index.html"><span class="identifier">BodyType</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpRequest$body(glitch.api.http.HttpRequest.BodyType, kotlin.Any, kotlin.Boolean)/body">body</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpRequest$body(glitch.api.http.HttpRequest.BodyType, kotlin.Any, kotlin.Boolean)/serializeNulls">serializeNulls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Set Request Body</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">body</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$body(glitch.api.http.HttpRequest.BodyType, kotlin.Any)/bodyType">bodyType</span><span class="symbol">:</span>&nbsp;<a href="-body-type/index.html"><span class="identifier">BodyType</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpRequest$body(glitch.api.http.HttpRequest.BodyType, kotlin.Any)/body">body</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Set Request Body without serializing nulls</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="header.html">header</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">header</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$header(kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpRequest$header(kotlin.String, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Add Header to the Request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="headers.html">headers</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">headers</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$headers(kotlin.collections.MutableMap((kotlin.String, )))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Add Headers to the Request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="query-param.html">queryParam</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">queryParam</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$queryParam(kotlin.String, kotlin.Any)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.api.http.HttpRequest$queryParam(kotlin.String, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Add Query Param to the Request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="query-params.html">queryParams</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">queryParams</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$queryParams(org.apache.commons.collections4.MultiValuedMap((kotlin.String, kotlin.Any)))/queryParams">queryParams</span><span class="symbol">:</span>&nbsp;<span class="identifier">MultiValuedMap</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">queryParams</span><span class="symbol">(</span><span class="identifier" id="glitch.api.http.HttpRequest$queryParams(kotlin.collections.MutableMap((kotlin.String, kotlin.Any)))/queryParams">queryParams</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">HttpRequest</span></a></code>
+<p>Add Query Params to the Request</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

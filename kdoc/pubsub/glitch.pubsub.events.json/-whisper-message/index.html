@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>WhisperMessage - pubsub</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubsub</a>&nbsp;/&nbsp;<a href="../index.html">glitch.pubsub.events.json</a>&nbsp;/&nbsp;<a href="./index.html">WhisperMessage</a><br/>
+<br/>
+<h1>WhisperMessage</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WhisperMessage</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">IDObject</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">&gt;</span></code>
+<p><strong>Author</strong><br/>
+Damian Staszewski <a href="#">damian@stachuofficial.tv</a></p>
+<p><strong>Version</strong><br/>
+%I%, %G%</p>
+<p><strong>Since</strong><br/>
+1.0</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-recipient/index.html">Recipient</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Recipient</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">IDObject</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-tags/index.html">Tags</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Tags</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">WhisperMessage</span><span class="symbol">(</span><span class="identifier" id="glitch.pubsub.events.json.WhisperMessage$<init>(kotlin.Long, kotlin.String, java.time.Instant, kotlin.Long, glitch.pubsub.events.json.WhisperMessage.Tags, glitch.pubsub.events.json.WhisperMessage.Recipient)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.pubsub.events.json.WhisperMessage$<init>(kotlin.Long, kotlin.String, java.time.Instant, kotlin.Long, glitch.pubsub.events.json.WhisperMessage.Tags, glitch.pubsub.events.json.WhisperMessage.Recipient)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.pubsub.events.json.WhisperMessage$<init>(kotlin.Long, kotlin.String, java.time.Instant, kotlin.Long, glitch.pubsub.events.json.WhisperMessage.Tags, glitch.pubsub.events.json.WhisperMessage.Recipient)/createdAt">createdAt</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a><span class="symbol">, </span><span class="identifier" id="glitch.pubsub.events.json.WhisperMessage$<init>(kotlin.Long, kotlin.String, java.time.Instant, kotlin.Long, glitch.pubsub.events.json.WhisperMessage.Tags, glitch.pubsub.events.json.WhisperMessage.Recipient)/senderId">senderId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="glitch.pubsub.events.json.WhisperMessage$<init>(kotlin.Long, kotlin.String, java.time.Instant, kotlin.Long, glitch.pubsub.events.json.WhisperMessage.Tags, glitch.pubsub.events.json.WhisperMessage.Recipient)/tags">tags</span><span class="symbol">:</span>&nbsp;<a href="-tags/index.html"><span class="identifier">Tags</span></a><span class="symbol">, </span><span class="identifier" id="glitch.pubsub.events.json.WhisperMessage$<init>(kotlin.Long, kotlin.String, java.time.Instant, kotlin.Long, glitch.pubsub.events.json.WhisperMessage.Tags, glitch.pubsub.events.json.WhisperMessage.Recipient)/recipient">recipient</span><span class="symbol">:</span>&nbsp;<a href="-recipient/index.html"><span class="identifier">Recipient</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="created-at.html">createdAt</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">createdAt</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="message.html">message</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">message</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="recipient.html">recipient</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">recipient</span><span class="symbol">: </span><a href="-recipient/index.html"><span class="identifier">Recipient</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="sender-id.html">senderId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">senderId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="tags.html">tags</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">tags</span><span class="symbol">: </span><a href="-tags/index.html"><span class="identifier">Tags</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

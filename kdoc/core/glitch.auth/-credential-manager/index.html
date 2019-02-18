@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CredentialManager - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.auth</a>&nbsp;/&nbsp;<a href="./index.html">CredentialManager</a><br/>
+<br/>
+<h1>CredentialManager</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CredentialManager</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.service/-abstract-http-service/index.html"><span class="identifier">AbstractHttpService</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CredentialManager</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$<init>(glitch.GlitchClient, glitch.auth.store.Storage)/client">client</span><span class="symbol">:</span>&nbsp;<a href="../../glitch/-glitch-client/index.html"><span class="identifier">GlitchClient</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.CredentialManager$<init>(glitch.GlitchClient, glitch.auth.store.Storage)/credentialStorage">credentialStorage</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.auth.store/-storage/index.html"><span class="identifier">Storage</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="build-authorization-url.html">buildAuthorizationUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildAuthorizationUrl</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-authorization-uri-builder/index.html"><span class="identifier">AuthorizationUriBuilder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="build-from-credentials.html">buildFromCredentials</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">buildFromCredentials</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$buildFromCredentials(glitch.auth.UserCredential)/userCredential">userCredential</span><span class="symbol">:</span>&nbsp;<a href="../-user-credential/index.html"><span class="identifier">UserCredential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create.html">create</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$create(kotlin.String, kotlin.String)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="glitch.auth.CredentialManager$create(kotlin.String, kotlin.String)/redirectUri">redirectUri</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-credential-storage.html">getCredentialStorage</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCredentialStorage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch.auth.store/-storage/index.html"><span class="identifier">Storage</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh.html">refresh</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">refresh</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$refresh(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="revoke.html">revoke</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">revoke</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$revoke(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="valid.html">valid</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">valid</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$valid(glitch.auth.objects.json.Credential)/credential">credential</span><span class="symbol">:</span>&nbsp;<a href="../../glitch.auth.objects.json/-credential/index.html"><span class="identifier">Credential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-validate/index.html"><span class="identifier">Validate</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">valid</span><span class="symbol">(</span><span class="identifier" id="glitch.auth.CredentialManager$valid(glitch.auth.UserCredential)/credential">credential</span><span class="symbol">:</span>&nbsp;<a href="../-user-credential/index.html"><span class="identifier">UserCredential</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../glitch.auth.objects.json/-validate/index.html"><span class="identifier">Validate</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../glitch.service/-abstract-http-service/get-client.html">getClient</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getClient</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../glitch/-glitch-client/index.html"><span class="identifier">GlitchClient</span></a></code>
+<p>{@inheritDoc}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
