@@ -8,7 +8,7 @@
 <a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">glitch.auth.objects.json</a>&nbsp;/&nbsp;<a href="./index.html">AccessToken</a><br/>
 <br/>
 <h1>AccessToken</h1>
-<code><span class="keyword">interface </span><span class="identifier">AccessToken</span></code>
+<code><span class="keyword">interface </span><span class="identifier">AccessToken</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../glitch.api.objects.json.interfaces/-creation/index.html"><span class="identifier">Creation</span></a></code>
 <h3>Properties</h3>
 <table>
 <tbody>
@@ -18,13 +18,6 @@
 </td>
 <td>
 <code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">accessToken</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="expired-at.html">expiredAt</a></p>
-</td>
-<td>
-<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">expiredAt</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a></code></td>
 </tr>
 <tr>
 <td>
@@ -39,6 +32,18 @@
 </td>
 <td>
 <code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">scopes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="../../glitch.auth/-glitch-scope/index.html"><span class="identifier">GlitchScope</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../glitch.api.objects.json.interfaces/-creation/created-at.html">createdAt</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">createdAt</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html"><span class="identifier">Instant</span></a></code></td>
 </tr>
 </tbody>
 </table>

@@ -10,6 +10,7 @@ glitch.auth.objects.json
 glitch.auth.objects.json.impl
 glitch.chat
 glitch.chat.events
+glitch.chat.irc
 glitch.helix.object.json
 glitch.kraken.object.json
 glitch.kraken.object.json.collections
